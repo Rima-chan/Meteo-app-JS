@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./front/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+    <title>Météo</title>
+</head>
+<body>
+    <main>
+        <div class="meteo-container">
+            <div class="meteo">
+                <i class="fas fa-cloud"></i>
+                <p>Météo</p>
+            </div>
+            <form class="search-section">
+                <input type="search" id="search-input" class="search-input" name="citie-search" required placeholder="Ville">
+                <button type="submit" id="submit-btn" class="search-btn" onclick="getValue();">Voir</button>
+            </form>
+            <div class="sum-up">
+                <img src="" alt="Icone temps" id="icon">
+                <p id="weather-description"></p>
+            </div>
+            <div class="result-section"> 
+                <div class="result-city result-txt">
+                    <p id="result-1" class="result-API"></p> 
+                </div>
+                <div class="result-celsius result-txt">
+                    <i class="fas fa-thermometer-three-quarters fa-2x"></i>
+                    <p id="result-2" class="result-API"></p>
+                </div>
+                <div class="result-humidity result-txt fa-2x">
+                    <i class="fas fa-tint"></i>
+                    <p id="result-3" class="result-API"></p>
+                </div>
+                <div class="result-wind result-txt fa-2x">
+                    <i class="fas fa-wind"></i>
+                    <p id="result-4" class="result-API"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./front/config.js" async></script>
+    <script src="./front/app.js" async></script>
+</body>
+</html>
