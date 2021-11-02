@@ -1,7 +1,5 @@
-const APIKEY = '07dfa3c159e050ea5e900f0f18be3b20';
 let form = document.querySelector("form");
 let searchInput;
-let searchOutput = [];
 
 const city = document.getElementById("result-1");
 const temp = document.getElementById("result-2");
